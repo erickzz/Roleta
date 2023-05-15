@@ -1,4 +1,4 @@
-import { useParams, Link, useNavigate } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import { Perguntas } from '../perguntas';
 import LogoVarejoBranco from '../assets/Logo_Varejo_Branco.png';
 import PerguntaCard from '../components/PerguntaCard';
