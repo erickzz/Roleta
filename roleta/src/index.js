@@ -7,14 +7,8 @@ import PaginaPerguntas from './pages/PaginaPerguntas';
 import App from './pages/App';
 
 const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <App />,
-    children: [
-      { path: '/:tema', element: <PaginaPerguntas /> },
-      { path: '/:tema', element: <PaginaPerguntas /> },
-    ],
-  },
+  { path: '/', element: <App /> },
+  { path: '/teste', element: <PaginaPerguntas /> },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
