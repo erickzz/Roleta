@@ -34,24 +34,24 @@ const WheelComponent = ({
     setTimeout(() => {
       window.scrollTo(0, 1);
     }, 0);
-  });
+  },[]);
   const wheelInit = () => {
     initCanvas();
     wheelDraw();
   };
 
   const initCanvas = () => {
-    let canvas = document.getElementById("canvas");
-
-    if (navigator.userAgent.indexOf("MSIE") !== -1) {
-      canvas = document.createElement("canvas");
-      canvas.setAttribute("width", 1000);
-      canvas.setAttribute("height", 600);
-      canvas.setAttribute("id", "canvas");
-      document.getElementById("wheel").appendChild(canvas);
+    let canvas = document.getElementById('canvas');
+    console.log(navigator);
+    if (navigator.userAgent.indexOf('MSIE') !== -1) {
+      canvas = document.createElement('canvas');
+      canvas.setAttribute('width', 1000);
+      canvas.setAttribute('height', 600);
+      canvas.setAttribute('id', 'canvas');
+      document.getElementById('wheel').appendChild(canvas);
     }
-    canvas.addEventListener("click", spin, false);
-    canvasContext = canvas.getContext("2d");
+    canvas.addEventListener('click', spin, false);
+    canvasContext = canvas.getContext('2d');
   };
   const spin = () => {
     isStarted = true;
