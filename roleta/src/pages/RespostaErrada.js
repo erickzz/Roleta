@@ -1,10 +1,14 @@
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import badbeep from '../assets/bad-beep-incorrect.wav';
 
 const RespostaErrada = () => {
+  const audio = new Audio(badbeep);
+
   const navigate = useNavigate();
 
   useEffect(() => {
+    audio.play();
     setTimeout(() => {
       navigate('/');
     }, 2000);
