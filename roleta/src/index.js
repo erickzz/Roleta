@@ -1,29 +1,25 @@
-import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
-import App from "./App";
-import Layout from "./Layout";
-import PaginaPerguntas from "./PáginaPerguntas";
-import Teste from "./Teste";
-
-const rootElement = document.getElementById("root");
-const root = createRoot(rootElement);
+import PaginaPerguntas from './pages/PaginaPerguntas';
+import App from './pages/App';
 
 const router = createBrowserRouter([
   {
-    path: "/",
-    element: <Layout />,
+    path: '/',
+    element: <App />,
     children: [
-      { index: true, element: <App /> },
-      { path: "/:tema", element: <PaginaPerguntas /> },
-      { path: "/teste", element: <Teste /> }
-    ]
-  }
+      { path: '/:tema', element: <PaginaPerguntas /> },
+      { path: '/:tema', element: <PaginaPerguntas /> },
+    ],
+  },
 ]);
 
+const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <StrictMode>
+  <React.StrictMode>
     <RouterProvider router={router} />
-  </StrictMode>
+  </React.StrictMode>
 );

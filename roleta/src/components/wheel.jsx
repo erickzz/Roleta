@@ -12,7 +12,7 @@ const WheelComponent = ({
   size = 290,
   upDuration = 100,
   downDuration = 1000,
-  fontFamily = "proxima-nova"
+  fontFamily = "proxima-nova",
 }) => {
   let currentSegment = "";
   let isStarted = false;
@@ -34,7 +34,7 @@ const WheelComponent = ({
     setTimeout(() => {
       window.scrollTo(0, 1);
     }, 0);
-  }, []);
+  });
   const wheelInit = () => {
     initCanvas();
     wheelDraw();
@@ -42,7 +42,7 @@ const WheelComponent = ({
 
   const initCanvas = () => {
     let canvas = document.getElementById("canvas");
-    console.log(navigator);
+
     if (navigator.userAgent.indexOf("MSIE") !== -1) {
       canvas = document.createElement("canvas");
       canvas.setAttribute("width", 1000);
@@ -57,7 +57,6 @@ const WheelComponent = ({
     isStarted = true;
     if (timerHandle === 0) {
       spinStart = new Date().getTime();
-      // maxSpeed = Math.PI / ((segments.length*2) + Math.random())
       maxSpeed = Math.PI / segments.length;
       frames = 0;
       timerHandle = setInterval(onTimerTick, timerDelay);
@@ -131,7 +130,7 @@ const WheelComponent = ({
     ctx.translate(centerX, centerY);
     ctx.rotate((lastAngle + angle) / 2);
     ctx.fillStyle = contrastColor;
-    ctx.font = "bold 1em " + fontFamily;
+    ctx.font = "bold 1.6em " + fontFamily;
     ctx.fillText(value.substr(0, 21), size / 2 + 20, 0);
     ctx.restore();
   };
@@ -142,10 +141,10 @@ const WheelComponent = ({
     const len = segments.length;
     const PI2 = Math.PI * 2;
     ctx.lineWidth = 1;
-    //ctx.strokeStyle = primaryColor;
+    ctx.strokeStyle = primaryColor;
     ctx.textBaseline = "middle";
     ctx.textAlign = "center";
-    ctx.font = "1em " + fontFamily;
+    ctx.font = "2em " + fontFamily;
     for (let i = 1; i <= len; i++) {
       const angle = PI2 * (i / len) + angleCurrent;
       drawSegment(i - 1, lastAngle, angle);
@@ -172,7 +171,7 @@ const WheelComponent = ({
     ctx.closePath();
 
     ctx.lineWidth = 10;
-    ctx.strokeStyle = "";
+    ctx.strokeStyle = primaryColor;
     ctx.stroke();
   };
 
@@ -206,19 +205,15 @@ const WheelComponent = ({
     ctx.clearRect(0, 0, 1000, 800);
   };
   return (
-    <div id="wheel" style={{ width: "100%" }}>
+    <div id="wheel">
       <canvas
         id="canvas"
-        width="600"
-        height="600"
+        width="1000"
+        height="800"
         style={{
-          pointerEvents: isFinished && isOnlyOnce ? "none" : "auto"
+          pointerEvents: isFinished && isOnlyOnce ? "none" : "auto",
         }}
       />
-      {/* <img
-        alt="Pointer Icon"
-        src="https://www.freeiconspng.com/thumbs/click-png/hands-click-png-icon-5.png"
-      /> */}
     </div>
   );
 };

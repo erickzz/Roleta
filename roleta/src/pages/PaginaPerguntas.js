@@ -1,5 +1,5 @@
-import { useParams, Link, useNavigate } from "react-router-dom";
-import { Perguntas } from "./perguntas";
+import { useParams, Link, useNavigate } from 'react-router-dom';
+import { Perguntas } from '../perguntas';
 
 export default function PaginaPerguntas() {
   const navigate = useNavigate();
@@ -8,11 +8,11 @@ export default function PaginaPerguntas() {
 
   const checkAnswer = (resposta) => {
     if (resposta) {
-      alert("Resposta Certa");
-      navigate("/");
+      alert('Resposta Certa');
+      navigate('/');
     } else {
-      alert("Resposta Errada");
-      navigate("/");
+      alert('Resposta Errada');
+      navigate('/');
     }
   };
 
