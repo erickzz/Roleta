@@ -8,15 +8,12 @@ import App from './pages/App';
 import RespostaCerta from './pages/RespostaCerta';
 import RespostaErrada from './pages/RespostaErrada';
 
-const router = createBrowserRouter(
-  [
-    { path: '/home', element: <App /> },
-    { path: '/:tema', element: <PaginaPerguntas /> },
-    { path: '/correct', element: <RespostaCerta /> },
-    { path: '/incorrect', element: <RespostaErrada /> },
-  ],
-  { basename: '/home' }
-);
+const router = createBrowserRouter([
+  { path: '/Roleta', element: <App /> },
+  { path: '/:tema', element: <PaginaPerguntas /> },
+  { path: '/correct', element: <RespostaCerta /> },
+  { path: '/incorrect', element: <RespostaErrada /> },
+]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
