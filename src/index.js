@@ -1,14 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import {
+  createBrowserRouter,
+  RouterProvider,
+  createHashRouter,
+} from 'react-router-dom';
 
 import PaginaPerguntas from './pages/PaginaPerguntas';
 import App from './pages/App';
 import RespostaCerta from './pages/RespostaCerta';
 import RespostaErrada from './pages/RespostaErrada';
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   { path: '/Roleta', element: <App /> },
   { path: '/:tema', element: <PaginaPerguntas /> },
   { path: '/correct', element: <RespostaCerta /> },
