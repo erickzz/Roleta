@@ -1,13 +1,20 @@
 @import url(//fonts.googleapis.com/css?family=Vibur);
+@font-face {
+  font-family: Campton-Bold;
+  src: url('./assets/Campton-Bold.otf');
+}
+
+* {
+  font-family: Campton-Bold !important;
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(rgba(24, 24, 24, 0.666), rgba(16, 15, 15, 0.627)),
-    url(./assets/sss.jfif);
+  background: #fcf4f7;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -19,7 +26,7 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
@@ -37,14 +44,19 @@ code {
   align-items: center;
   justify-content: center;
 
-  box-shadow: 4px 10px 92px 85px rgba(3, 6, 86, 0.75);
+  /*box-shadow: 4px 10px 92px 85px rgba(3, 6, 86, 0.75);*/
 }
 
 .main_text {
   position: absolute;
-  left: 8%;
-  top: 15%;
-  transform: rotate(-30deg);
+  width: 10%;
+  left: 5%;
+  top: 5%;
+}
+
+.main_text p {
+  font-size: 3rem;
+  color: #bb1625;
 }
 .right_text {
   position: absolute;
@@ -55,7 +67,7 @@ code {
 
 .main_text b,
 .right_text b {
-  font: 400 10vh "Vibur";
+  font: 400 10vh 'Vibur';
   color: #fee;
   text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #ff4444,
     0 0 0.1em #ff4444, 0 10px 3px #000;
@@ -68,6 +80,15 @@ code {
 .right_text b span:nth-of-type(2) {
   animation: blink linear infinite 3s;
 }
+
+.icone-click {
+  width: 50px;
+  position: absolute;
+  left: 48.8%;
+  top: 46%;
+  pointer-events: none;
+}
+
 @keyframes blink {
   78% {
     color: inherit;
@@ -122,6 +143,77 @@ code {
   width: 300px;
 }
 
+.container_perguntas {
+  width: 80vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20%;
+}
+
+.pergunta {
+  width: 100%;
+  height: auto;
+  color: #fff;
+  font-size: 2rem;
+  padding-bottom: 2%;
+}
+
+.infoPergunta {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.pergunta p {
+  text-align: center;
+}
+
+.infoPergunta img {
+  width: 300px;
+}
+
+.botao-voltar {
+  width: 100%;
+  text-align: end;
+}
+
+.botao-voltar button {
+  padding: 10px;
+  background-color: transparent;
+  border: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+  margin-right: 20px;
+  color: #fff;
+}
+
+.botao-voltar button:hover {
+  background-color: #fff;
+}
+
+.botao-alternativa {
+  width: 100%;
+  height: 4rem;
+  margin-top: 2%;
+  border: none;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.botao-alternativa:hover {
+  background-color: #fff !important;
+}
+
+.resposta-errada {
+  color: #bb1625;
+}
+
+.resposta-certa {
+  color: #055cba;
+}
+
 @media only screen and (max-width: 1200px) {
   .coin_right_img {
     right: 3%;
@@ -135,6 +227,13 @@ code {
   .right_text {
     right: 3%;
   }
+  .icone-click {
+    width: 50px;
+    position: absolute;
+    left: 47%;
+    top: 46%;
+    pointer-events: none;
+  }
 }
 
 @media only screen and (max-width: 900px) {
@@ -146,7 +245,7 @@ code {
   }
   .main_text b,
   .right_text b {
-    font: 400 6vh "Vibur";
+    font: 400 6vh 'Vibur';
   }
 }
 

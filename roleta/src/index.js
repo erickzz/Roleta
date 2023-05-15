@@ -5,10 +5,14 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import PaginaPerguntas from './pages/PaginaPerguntas';
 import App from './pages/App';
+import RespostaCerta from './pages/RespostaCerta';
+import RespostaErrada from './pages/RespostaErrada';
 
 const router = createBrowserRouter([
   { path: '/', element: <App /> },
   { path: '/:tema', element: <PaginaPerguntas /> },
+  { path: '/correct', element: <RespostaCerta /> },
+  { path: '/incorrect', element: <RespostaErrada /> },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

@@ -1,20 +1,24 @@
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { Perguntas } from '../perguntas';
+import LogoVarejoBranco from '../assets/Logo_Varejo_Branco.png';
+import PerguntaCard from '../components/PerguntaCard';
 
 export default function PaginaPerguntas() {
-  const navigate = useNavigate();
-
   const { tema } = useParams();
 
-  const checkAnswer = (resposta) => {
-    if (resposta) {
-      alert('Resposta Certa');
-      navigate('/');
-    } else {
-      alert('Resposta Errada');
-      navigate('/');
-    }
-  };
+  let corTema = '';
+
+  if (tema === 'Varejo') {
+    corTema = '#faa230';
+  } else if (tema === 'Logística') {
+    corTema = '#055cba';
+  } else {
+    corTema = '#bb1625';
+  }
+
+  /* if (botaoVoltar.style.backgroundColor === '#fff') {
+    console.log('NSDFHDSIFDSJI');
+  } */
 
   const pergunta = Perguntas.filter((pergunta) => pergunta.tema === tema);
   console.log(pergunta);
@@ -24,28 +28,38 @@ export default function PaginaPerguntas() {
   const perguntasAleatorizadas = perguntaSelecionada.alternativas.sort(
     (a, b) => 0.5 - Math.random()
   );
-  const alternativas = perguntasAleatorizadas.map((alternativa) => (
-    <button
-      key={alternativa.texto}
-      onClick={() => {
-        checkAnswer(alternativa.valor);
-      }}
-    >
-      {alternativa.texto}
-    </button>
-  ));
+
+  const mouseEnterVoltar = (e) => {
+    e.target.style.color = corTema;
+  };
+
+  const mouseLeaveVoltar = (e) => {
+    e.target.style.color = '#fff';
+  };
 
   return (
-    <>
-      <h1> Tema sorteado foi: {tema}</h1>
-      <div>
+    <div className="container_perguntas">
+      <div className="pergunta" style={{ backgroundColor: corTema }}>
+        <div className="infoPergunta">
+          <img src={LogoVarejoBranco} alt="Logo Varejo+ Branca" />
+          <p>Tema: {tema}</p>
+        </div>
         <p>{perguntaSelecionada.pergunta}</p>
-        <p>{alternativas}</p>
+        <div className="botao-voltar">
+          <Link to="/">
+            <button
+              onMouseEnter={mouseEnterVoltar}
+              onMouseLeave={mouseLeaveVoltar}
+            >
+              Voltar
+            </button>
+          </Link>
+        </div>
       </div>
-
-      <Link to="/">
-        <button>Voltar</button>
-      </Link>
-    </>
+      <PerguntaCard
+        perguntasAleatorizadas={perguntasAleatorizadas}
+        tema={corTema}
+      />
+    </div>
   );
 }
