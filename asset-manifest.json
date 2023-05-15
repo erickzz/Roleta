@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/Roleta/home/static/css/main.f1d8cf83.css",
-    "main.js": "/Roleta/home/static/js/main.a4940139.js",
-    "static/media/winner-bell-game-show.wav": "/Roleta/home/static/media/winner-bell-game-show.dd92b8620b60636d8bf1.wav",
-    "static/media/bad-beep-incorrect.wav": "/Roleta/home/static/media/bad-beep-incorrect.0d8cd91514b5d7fe4086.wav",
-    "static/media/Campton-Bold.otf": "/Roleta/home/static/media/Campton-Bold.d63feafcf51c807bd9bd.otf",
-    "static/media/Logo_Focus.jpeg": "/Roleta/home/static/media/Logo_Focus.370bf6f83fa4bd2850a6.jpeg",
-    "static/media/Logo_Varejo.jpeg": "/Roleta/home/static/media/Logo_Varejo.3a9b8ed66641df73b707.jpeg",
-    "static/media/Logo_Varejo_Branco.png": "/Roleta/home/static/media/Logo_Varejo_Branco.ecb874fed0c98296813d.png",
-    "index.html": "/Roleta/home/index.html",
-    "main.f1d8cf83.css.map": "/Roleta/home/static/css/main.f1d8cf83.css.map",
-    "main.a4940139.js.map": "/Roleta/home/static/js/main.a4940139.js.map"
+    "main.css": "/Roleta/static/css/main.80ebcfce.css",
+    "main.js": "/Roleta/static/js/main.6688177d.js",
+    "static/media/winner-bell-game-show.wav": "/Roleta/static/media/winner-bell-game-show.dd92b8620b60636d8bf1.wav",
+    "static/media/bad-beep-incorrect.wav": "/Roleta/static/media/bad-beep-incorrect.0d8cd91514b5d7fe4086.wav",
+    "static/media/Campton-Bold.otf": "/Roleta/static/media/Campton-Bold.d63feafcf51c807bd9bd.otf",
+    "static/media/Logo_Focus.jpeg": "/Roleta/static/media/Logo_Focus.370bf6f83fa4bd2850a6.jpeg",
+    "static/media/Logo_Varejo.jpeg": "/Roleta/static/media/Logo_Varejo.3a9b8ed66641df73b707.jpeg",
+    "static/media/Logo_Varejo_Branco.png": "/Roleta/static/media/Logo_Varejo_Branco.ecb874fed0c98296813d.png",
+    "index.html": "/Roleta/index.html",
+    "main.80ebcfce.css.map": "/Roleta/static/css/main.80ebcfce.css.map",
+    "main.6688177d.js.map": "/Roleta/static/js/main.6688177d.js.map"
   },
   "entrypoints": [
-    "static/css/main.f1d8cf83.css",
-    "static/js/main.a4940139.js"
+    "static/css/main.80ebcfce.css",
+    "static/js/main.6688177d.js"
   ]
 }
