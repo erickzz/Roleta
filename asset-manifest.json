@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Roleta/static/css/main.80ebcfce.css",
-    "main.js": "/Roleta/static/js/main.4f733a8d.js",
+    "main.css": "/Roleta/static/css/main.21310ff1.css",
+    "main.js": "/Roleta/static/js/main.e0b3b05a.js",
     "static/media/winner-bell-game-show.wav": "/Roleta/static/media/winner-bell-game-show.dd92b8620b60636d8bf1.wav",
     "static/media/bad-beep-incorrect.wav": "/Roleta/static/media/bad-beep-incorrect.0d8cd91514b5d7fe4086.wav",
     "static/media/Campton-Bold.otf": "/Roleta/static/media/Campton-Bold.d63feafcf51c807bd9bd.otf",
@@ -9,11 +9,11 @@
     "static/media/Logo_Varejo.jpeg": "/Roleta/static/media/Logo_Varejo.3a9b8ed66641df73b707.jpeg",
     "static/media/Logo_Varejo_Branco.png": "/Roleta/static/media/Logo_Varejo_Branco.ecb874fed0c98296813d.png",
     "index.html": "/Roleta/index.html",
-    "main.80ebcfce.css.map": "/Roleta/static/css/main.80ebcfce.css.map",
-    "main.4f733a8d.js.map": "/Roleta/static/js/main.4f733a8d.js.map"
+    "main.21310ff1.css.map": "/Roleta/static/css/main.21310ff1.css.map",
+    "main.e0b3b05a.js.map": "/Roleta/static/js/main.e0b3b05a.js.map"
   },
   "entrypoints": [
-    "static/css/main.80ebcfce.css",
-    "static/js/main.4f733a8d.js"
+    "static/css/main.21310ff1.css",
+    "static/js/main.e0b3b05a.js"
   ]
 }
