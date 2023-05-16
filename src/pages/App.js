@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import WheelComponent from '../components/wheel';
 import '../index.css';
 import LogoVarejo from '../assets/Logo_Varejo.jpeg';
