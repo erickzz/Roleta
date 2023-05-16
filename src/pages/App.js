@@ -40,10 +40,10 @@ const App = () => {
         downDuration={300}
         fontFamily="Arial"
       />
-      <div className="coin_left_img">
+      <div className="left_img">
         <img src={LogoVarejo} alt="Varejo+ Logo" />
       </div>
-      <div className="coin_right_img">
+      <div className="right_img">
         <img src={LogoFocus} alt="Focus Logo" />
       </div>
     </>

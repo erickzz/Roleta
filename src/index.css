@@ -58,28 +58,6 @@ code {
   font-size: 3rem;
   color: #bb1625;
 }
-.right_text {
-  position: absolute;
-  top: 15%;
-  right: 8%;
-  transform: rotate(40deg);
-}
-
-.main_text b,
-.right_text b {
-  font: 400 10vh 'Vibur';
-  color: #fee;
-  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #ff4444,
-    0 0 0.1em #ff4444, 0 10px 3px #000;
-}
-.main_text b span,
-.right_text b span {
-  animation: blink linear infinite 2s;
-}
-.main_text b span:nth-of-type(2),
-.right_text b span:nth-of-type(2) {
-  animation: blink linear infinite 3s;
-}
 
 .icone-click {
   width: 50px;
@@ -89,49 +67,16 @@ code {
   pointer-events: none;
 }
 
-@keyframes blink {
-  78% {
-    color: inherit;
-    text-shadow: inherit;
-  }
-  79% {
-    color: #333;
-  }
-  80% {
-    text-shadow: none;
-  }
-  81% {
-    color: inherit;
-    text-shadow: inherit;
-  }
-  82% {
-    color: #333;
-    text-shadow: none;
-  }
-  83% {
-    color: inherit;
-    text-shadow: inherit;
-  }
-  92% {
-    color: #333;
-    text-shadow: none;
-  }
-  92.5% {
-    color: inherit;
-    text-shadow: inherit;
-  }
-}
-
-.coin_left_img {
+.left_img {
   position: absolute;
   left: 10%;
   bottom: 40px;
 }
 
-.coin_left_img img {
+.left_img img {
   width: 250px;
 }
-.coin_right_img {
+.right_img {
   position: absolute;
   right: 10%;
   bottom: 40px;
@@ -139,7 +84,7 @@ code {
   outline: none;
 }
 
-.coin_right_img img {
+.right_img img {
   width: 300px;
 }
 
@@ -215,10 +160,10 @@ code {
 }
 
 @media only screen and (max-width: 1200px) {
-  .coin_right_img {
+  .right_img {
     right: 3%;
   }
-  .coin_left_img {
+  .left_img {
     left: 3%;
   }
   .main_text {
@@ -237,15 +182,28 @@ code {
 }
 
 @media only screen and (max-width: 900px) {
-  .coin_right_img img {
+  .right_img img {
     width: 200px;
   }
-  .coin_left_img img {
+  .left_img img {
     width: 150px;
   }
   .main_text b,
   .right_text b {
     font: 400 6vh 'Vibur';
+  }
+  .container_perguntas {
+    justify-content: center;
+    margin: 0;
+  }
+
+  .pergunta img {
+    width: 35%;
+  }
+
+  .botao-alternativa {
+    height: 8%;
+    margin-top: 3%;
   }
 }
 
