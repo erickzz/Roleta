@@ -71,6 +71,7 @@ code {
   position: absolute;
   left: 10%;
   bottom: 40px;
+  user-select: none;
 }
 
 .left_img img {
@@ -82,6 +83,7 @@ code {
   bottom: 40px;
   overflow: hidden;
   outline: none;
+  user-select: none;
 }
 
 .right_img img {
@@ -94,6 +96,7 @@ code {
   display: flex;
   flex-direction: column;
   margin-top: 20%;
+  user-select: none;
 }
 
 .pergunta {
