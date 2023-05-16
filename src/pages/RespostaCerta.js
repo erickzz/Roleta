@@ -9,7 +9,7 @@ const RespostaCerta = () => {
   useEffect(() => {
     audio.play();
     setTimeout(() => {
-      navigate('/Roleta');
+      navigate('/');
     }, 2000);
   }, []);
 
