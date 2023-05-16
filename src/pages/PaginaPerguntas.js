@@ -44,7 +44,7 @@ export default function PaginaPerguntas() {
           <img src={LogoVarejoBranco} alt="Logo Varejo+ Branca" />
           <p>Tema: {tema}</p>
         </div>
-        <p>{perguntaSelecionada.pergunta}</p>
+        <p className="texto-pergunta">{perguntaSelecionada.pergunta}</p>
         <div className="botao-voltar">
           <Link to="/">
             <button
