@@ -74,7 +74,8 @@ code {
 .left_img {
   position: absolute;
   left: 10%;
-  bottom: 40px;
+  bottom: 70px;
+  display: flex;
 }
 
 .left_img img {
@@ -87,6 +88,7 @@ code {
 }
 
 .right_img img {
+  width: 250px;
   -drag: none;
   user-select: none;
   -moz-user-select: none;
@@ -97,10 +99,11 @@ code {
 .right_img {
   position: absolute;
   right: 10%;
-  bottom: 40px;
+  bottom: 70px;
   overflow: hidden;
   outline: none;
   user-select: none;
+  display: flex;
 }
 
 .right_img img {

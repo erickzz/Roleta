@@ -1,8 +1,8 @@
 import React from 'react';
 import WheelComponent from '../components/wheel';
 import '../index.css';
-import LogoVarejo from '../assets/Logo_Varejo.jpeg';
-import LogoFocus from '../assets/Logo_Focus.jpeg';
+import LogoVarejo from '../assets/Logo_Varejo.png';
+import LogoFocus from '../assets/Logo_Focus.png';
 import ClickIcon from '../assets/Click_Icon.jpeg';
 
 import { useNavigate } from 'react-router-dom';
