@@ -21,10 +21,10 @@ export default function PaginaPerguntas() {
   } */
 
   const pergunta = Perguntas.filter((pergunta) => pergunta.tema === tema);
-  console.log(pergunta);
+  //console.log(pergunta);
   const perguntaSelecionada =
     pergunta[Math.floor(Math.random() * pergunta.length)];
-  console.log(perguntaSelecionada);
+  //console.log(perguntaSelecionada);
   const perguntasAleatorizadas = perguntaSelecionada.alternativas.sort(
     (a, b) => 0.5 - Math.random()
   );

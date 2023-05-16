@@ -13,7 +13,7 @@ const App = () => {
   const segments = ['Varejo', 'Logística', 'Operacional'];
   const segColors = ['#faa230', '#055cba', '#bb1625'];
   const onFinished = (winner) => {
-    console.log(winner);
+    //console.log(winner);
     setTimeout(() => {
       navigate(`/${winner}`);
     }, 600);
