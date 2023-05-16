@@ -18,6 +18,7 @@ const PerguntaCard = ({ perguntasAleatorizadas, tema }) => {
       key={alternativa.texto}
       onMouseEnter={(e) => {
         e.target.style.color = tema;
+        e.target.style.border = `3px solid ${tema}`;
       }}
       onMouseLeave={(e) => {
         e.target.style.color = '#fff';
