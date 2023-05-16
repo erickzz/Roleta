@@ -12,12 +12,15 @@ import App from './pages/App';
 import RespostaCerta from './pages/RespostaCerta';
 import RespostaErrada from './pages/RespostaErrada';
 
-const router = createHashRouter([
-  { index: true, element: <App /> },
-  { path: '/:tema', element: <PaginaPerguntas /> },
-  { path: '/correct', element: <RespostaCerta /> },
-  { path: '/incorrect', element: <RespostaErrada /> },
-]);
+const router = createHashRouter(
+  [
+    { path: '/', element: <App /> },
+    { path: '/:tema', element: <PaginaPerguntas /> },
+    { path: '/correct', element: <RespostaCerta /> },
+    { path: '/incorrect', element: <RespostaErrada /> },
+  ],
+  { basename: '/' }
+);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
