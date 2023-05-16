@@ -57,6 +57,10 @@ code {
 .main_text p {
   font-size: 3rem;
   color: #bb1625;
+  -drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
 }
 
 .icone-click {
@@ -71,12 +75,25 @@ code {
   position: absolute;
   left: 10%;
   bottom: 40px;
-  user-select: none;
 }
 
 .left_img img {
   width: 250px;
+  -drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
 }
+
+.right_img img {
+  -drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+}
+
 .right_img {
   position: absolute;
   right: 10%;
@@ -111,6 +128,13 @@ code {
   display: flex;
   justify-content: space-between;
   margin: 20px;
+}
+
+.infoPergunta img {
+  -drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
 }
 
 .pergunta p {
@@ -181,6 +205,17 @@ code {
     left: 47%;
     top: 46%;
     pointer-events: none;
+    -drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+  }
+
+  .icone-click img {
+    -drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
   }
 }
 
