@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Roleta/static/css/main.4e3751fc.css",
-    "main.js": "/Roleta/static/js/main.05793415.js",
+    "main.js": "/Roleta/static/js/main.08842c3b.js",
     "static/media/winner-bell-game-show.wav": "/Roleta/static/media/winner-bell-game-show.dd92b8620b60636d8bf1.wav",
     "static/media/Logo_Focus.png": "/Roleta/static/media/Logo_Focus.3887d097d36ece2dae4a.png",
     "static/media/bad-beep-incorrect.wav": "/Roleta/static/media/bad-beep-incorrect.0d8cd91514b5d7fe4086.wav",
@@ -10,10 +10,10 @@
     "static/media/Logo_Varejo_Branco.png": "/Roleta/static/media/Logo_Varejo_Branco.ecb874fed0c98296813d.png",
     "index.html": "/Roleta/index.html",
     "main.4e3751fc.css.map": "/Roleta/static/css/main.4e3751fc.css.map",
-    "main.05793415.js.map": "/Roleta/static/js/main.05793415.js.map"
+    "main.08842c3b.js.map": "/Roleta/static/js/main.08842c3b.js.map"
   },
   "entrypoints": [
     "static/css/main.4e3751fc.css",
-    "static/js/main.05793415.js"
+    "static/js/main.08842c3b.js"
   ]
 }
