@@ -19,6 +19,10 @@ const App = () => {
     }, 600);
   };
 
+  const rotacao = Math.floor(Math.random() * 500);
+
+  console.log(rotacao);
+
   return (
     <>
       <div className="main_text">
@@ -37,7 +41,7 @@ const App = () => {
         isOnlyOnce={false}
         size={260}
         upDuration={100}
-        downDuration={300}
+        downDuration={rotacao}
         fontFamily="Arial"
       />
       <div className="left_img">
