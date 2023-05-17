@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Roleta/static/css/main.2b17c392.css",
-    "main.js": "/Roleta/static/js/main.2cadaa8b.js",
+    "main.js": "/Roleta/static/js/main.a3e0c9f3.js",
     "static/media/winner-bell-game-show.wav": "/Roleta/static/media/winner-bell-game-show.dd92b8620b60636d8bf1.wav",
     "static/media/bad-beep-incorrect.wav": "/Roleta/static/media/bad-beep-incorrect.0d8cd91514b5d7fe4086.wav",
     "static/media/Logo_Parque.png": "/Roleta/static/media/Logo_Parque.11798b946a7a6dc97a7b.png",
@@ -10,10 +10,10 @@
     "static/media/marca-sebrae-branca.png": "/Roleta/static/media/marca-sebrae-branca.9a13f7f8039988f8ad24.png",
     "index.html": "/Roleta/index.html",
     "main.2b17c392.css.map": "/Roleta/static/css/main.2b17c392.css.map",
-    "main.2cadaa8b.js.map": "/Roleta/static/js/main.2cadaa8b.js.map"
+    "main.a3e0c9f3.js.map": "/Roleta/static/js/main.a3e0c9f3.js.map"
   },
   "entrypoints": [
     "static/css/main.2b17c392.css",
-    "static/js/main.2cadaa8b.js"
+    "static/js/main.a3e0c9f3.js"
   ]
 }
