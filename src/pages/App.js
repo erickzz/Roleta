@@ -21,7 +21,11 @@ const App = () => {
     }, 600);
   };
 
-  const rotacao = Math.floor(Math.random() * 500);
+  let rotacao = Math.floor(Math.random() * 400);
+
+  if (rotacao < 150) {
+    rotacao = 150;
+  }
 
   console.log(rotacao);
 
