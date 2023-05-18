@@ -33,7 +33,7 @@ const App = () => {
   return (
     <>
       <div className="main_text">
-        <img src={LogoArena} />
+        <img src={LogoArena} alt="Logo Arena" />
         {/* <p>Quiz Educampo</p> */}
       </div>
 
