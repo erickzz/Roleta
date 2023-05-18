@@ -6,6 +6,7 @@ import '../index.css';
 import ClickIcon from '../assets/Click_Icon.jpeg';
 import MarcaSebrae from '../assets/marca-sebrae.png';
 import LogoParque from '../assets/Logo_Parque.png';
+import LogoArena from '../assets/Logo_Arena.png';
 
 import { useNavigate } from 'react-router-dom';
 
@@ -32,7 +33,8 @@ const App = () => {
   return (
     <>
       <div className="main_text">
-        <p>Quiz Educampo</p>
+        <img src={LogoArena} />
+        {/* <p>Quiz Educampo</p> */}
       </div>
 
       <img className="icone-click" src={ClickIcon} alt="Ícone de Clique" />
