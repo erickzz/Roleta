@@ -43,7 +43,7 @@ const App = () => {
         contrastColor="white"
         buttonText=""
         isOnlyOnce={false}
-        size={260}
+        size={300}
         upDuration={rotacao}
         downDuration={600}
         fontFamily="Arial"
