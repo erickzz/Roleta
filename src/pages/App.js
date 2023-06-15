@@ -1,20 +1,18 @@
 import React from 'react';
 import WheelComponent from '../components/wheel';
 import '../index.css';
-//import LogoVarejo from '../assets/Logo_Varejo.png';
-//import LogoFocus from '../assets/Logo_Focus.png';
+import LogoVarejo from '../assets/Logo_Varejo.png';
+import LogoFocus from '../assets/Logo_Focus.png';
 import ClickIcon from '../assets/Click_Icon.jpeg';
 import MarcaSebrae from '../assets/marca-sebrae.png';
-import LogoParque from '../assets/Logo_Parque.png';
-import LogoArena from '../assets/Logo_Arena.png';
 
 import { useNavigate } from 'react-router-dom';
 
 const App = () => {
   const navigate = useNavigate();
 
-  const segments = ['Inova 1', 'Inova 2', 'Inova 3'];
-  const segColors = ['#045bbc', '#04949c', '#5c7c2c'];
+  const segments = ['Varejo', 'Logística', 'Operacional'];
+  const segColors = ['#faa230', '#055cba', '#bb1625'];
   const onFinished = (winner) => {
     //console.log(winner);
     setTimeout(() => {
@@ -33,10 +31,8 @@ const App = () => {
   return (
     <>
       <div className="main_text">
-        <img src={LogoArena} alt="Logo Arena" />
-        {/* <p>Quiz Educampo</p> */}
+        <p>Varejo+ Experience</p>
       </div>
-
       <img className="icone-click" src={ClickIcon} alt="Ícone de Clique" />
 
       <WheelComponent
@@ -48,15 +44,15 @@ const App = () => {
         buttonText=""
         isOnlyOnce={false}
         size={260}
-        upDuration={100}
-        downDuration={rotacao}
+        upDuration={rotacao}
+        downDuration={600}
         fontFamily="Arial"
       />
       <div className="left_img">
-        <img src={LogoParque} alt="Logo Parque Científico Tecnológico" />
+        <img src={LogoVarejo} alt="Logo Parque Científico Tecnológico" />
       </div>
       <div className="right_img">
-        <img src={MarcaSebrae} alt="Logo Sebrae" />
+        <img src={LogoFocus} alt="Logo Sebrae" />
       </div>
     </>
   );

@@ -134,7 +134,6 @@ code {
 }
 
 .infoPergunta img {
-  height: 150px;
   -drag: none;
   user-select: none;
   -moz-user-select: none;
@@ -189,11 +188,11 @@ code {
 }
 
 .resposta-errada {
-  color: #5c7c2c;
+  color: #bb1625;
 }
 
 .resposta-certa {
-  color: #045bbc;
+  color: #055cba;
 }
 
 @media only screen and (max-width: 1200px) {
