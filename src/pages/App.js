@@ -28,12 +28,18 @@ const App = () => {
 
   console.log(rotacao);
 
+  const responsive = false;
+
   return (
     <>
       <div className="main_text">
         <p>Varejo+ Experience</p>
       </div>
-      <img className="icone-click" src={ClickIcon} alt="Ícone de Clique" />
+      {responsive ? (
+        ''
+      ) : (
+        <img className="icone-click" src={ClickIcon} alt="Ícone de Clique" />
+      )}
 
       <WheelComponent
         segments={segments}
@@ -43,7 +49,7 @@ const App = () => {
         contrastColor="white"
         buttonText=""
         isOnlyOnce={false}
-        size={260}
+        size={responsive ? 100 : 290}
         upDuration={rotacao}
         downDuration={600}
         fontFamily="Arial"
