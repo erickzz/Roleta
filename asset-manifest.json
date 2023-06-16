@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/Roleta/static/css/main.20f16850.css",
-    "main.js": "/Roleta/static/js/main.21c0a529.js",
+    "main.css": "/Roleta/static/css/main.89a0a68b.css",
+    "main.js": "/Roleta/static/js/main.e8af1712.js",
     "static/media/winner-bell-game-show.wav": "/Roleta/static/media/winner-bell-game-show.dd92b8620b60636d8bf1.wav",
     "static/media/Logo_Focus.png": "/Roleta/static/media/Logo_Focus.3887d097d36ece2dae4a.png",
     "static/media/bad-beep-incorrect.wav": "/Roleta/static/media/bad-beep-incorrect.0d8cd91514b5d7fe4086.wav",
     "static/media/Logo_Varejo.png": "/Roleta/static/media/Logo_Varejo.af32f377056ac2d7316e.png",
     "static/media/Campton-Bold.otf": "/Roleta/static/media/Campton-Bold.d63feafcf51c807bd9bd.otf",
-    "static/media/marca-sebrae.png": "/Roleta/static/media/marca-sebrae.ba579773d9721cde0759.png",
     "static/media/marca-sebrae-branca.png": "/Roleta/static/media/marca-sebrae-branca.9a13f7f8039988f8ad24.png",
+    "static/media/Logo_Toner.png": "/Roleta/static/media/Logo_Toner.a755a560612d968c00e3.png",
     "static/media/Logo_Varejo_Branco.png": "/Roleta/static/media/Logo_Varejo_Branco.ecb874fed0c98296813d.png",
     "index.html": "/Roleta/index.html",
-    "main.20f16850.css.map": "/Roleta/static/css/main.20f16850.css.map",
-    "main.21c0a529.js.map": "/Roleta/static/js/main.21c0a529.js.map"
+    "main.89a0a68b.css.map": "/Roleta/static/css/main.89a0a68b.css.map",
+    "main.e8af1712.js.map": "/Roleta/static/js/main.e8af1712.js.map"
   },
   "entrypoints": [
-    "static/css/main.20f16850.css",
-    "static/js/main.21c0a529.js"
+    "static/css/main.89a0a68b.css",
+    "static/js/main.e8af1712.js"
   ]
 }
