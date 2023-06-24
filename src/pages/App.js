@@ -5,6 +5,7 @@ import LogoVarejo from '../assets/Logo_Varejo.png';
 import LogoFocus from '../assets/Logo_Focus.png';
 import ClickIcon from '../assets/Click_Icon.jpeg';
 import MarcaSebrae from '../assets/marca-sebrae.png';
+import LogoToner from '../assets/LogoToner.png';
 
 import { useNavigate } from 'react-router-dom';
 
@@ -59,6 +60,10 @@ const App = () => {
       </div>
       <div className="right_img">
         <img src={LogoFocus} alt="Logo Sebrae" />
+      </div>
+
+      <div className="right_up_img">
+        <img src={LogoToner} alt="Logo Toner" />
       </div>
     </>
   );

@@ -110,6 +110,20 @@ code {
   width: 300px;
 }
 
+.right_up_img {
+  position: absolute;
+  right: 10%;
+  top: 70px;
+  overflow: hidden;
+  outline: none;
+  user-select: none;
+  display: flex;
+}
+
+.right_up_img img {
+  width: 300px;
+}
+
 .container_perguntas {
   width: 80vw;
   height: 100vh;
