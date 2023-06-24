@@ -51,7 +51,7 @@ const App = () => {
         isOnlyOnce={false}
         size={responsive ? 100 : 290}
         upDuration={rotacao}
-        downDuration={600}
+        downDuration={1200}
         fontFamily="Arial"
       />
       <div className="left_img">
