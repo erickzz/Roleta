@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Roleta/static/css/main.b7dc7b76.css",
-    "main.js": "/Roleta/static/js/main.c0c02a95.js",
+    "main.css": "/Roleta/static/css/main.7d9a7681.css",
+    "main.js": "/Roleta/static/js/main.db452426.js",
     "static/media/winner-bell-game-show.wav": "/Roleta/static/media/winner-bell-game-show.dd92b8620b60636d8bf1.wav",
     "static/media/Logo_Focus.png": "/Roleta/static/media/Logo_Focus.3887d097d36ece2dae4a.png",
     "static/media/bad-beep-incorrect.wav": "/Roleta/static/media/bad-beep-incorrect.0d8cd91514b5d7fe4086.wav",
@@ -12,11 +12,11 @@
     "static/media/LogoToner.png": "/Roleta/static/media/LogoToner.a755a560612d968c00e3.png",
     "static/media/Logo_Varejo_Branco.png": "/Roleta/static/media/Logo_Varejo_Branco.ecb874fed0c98296813d.png",
     "index.html": "/Roleta/index.html",
-    "main.b7dc7b76.css.map": "/Roleta/static/css/main.b7dc7b76.css.map",
-    "main.c0c02a95.js.map": "/Roleta/static/js/main.c0c02a95.js.map"
+    "main.7d9a7681.css.map": "/Roleta/static/css/main.7d9a7681.css.map",
+    "main.db452426.js.map": "/Roleta/static/js/main.db452426.js.map"
   },
   "entrypoints": [
-    "static/css/main.b7dc7b76.css",
-    "static/js/main.c0c02a95.js"
+    "static/css/main.7d9a7681.css",
+    "static/js/main.db452426.js"
   ]
 }
