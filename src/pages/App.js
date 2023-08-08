@@ -56,14 +56,10 @@ const App = () => {
         fontFamily="Arial"
       />
       <div className="left_img">
-        <img src={LogoVarejo} alt="Logo Parque Científico Tecnológico" />
+        <img src={LogoVarejo} alt="Logo Varejo" />
       </div>
       <div className="right_img">
         <img src={LogoFocus} alt="Logo Sebrae" />
-      </div>
-
-      <div className="right_up_img">
-        <img src={LogoToner} alt="Logo Toner" />
       </div>
     </>
   );
