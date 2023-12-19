@@ -1,1 +1,1 @@
-Simple roulette made using React.
+A simple roulette game created using React.
